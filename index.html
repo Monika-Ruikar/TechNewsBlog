@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TechNews - Latest Tech & Gadget News</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- AOS Animation CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>TechNews</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="search-section">
+      <input type="text" id="searchInput" placeholder="Search articles..." />
+    </section>
+
+    <section id="articles" class="articles-grid">
+      <article class="article" data-category="technology" data-aos="fade-up">
+        <img src="https://picsum.photos/400/200?random=1" alt="AI Breakthrough" />
+        <h2>New AI Breakthrough Revolutionizes Machine Learning</h2>
+        <p class="date">Published: August 10, 2025</p>
+        <p>Researchers developed a new AI model improving natural language understanding for smarter virtual assistants.</p>
+        <a href="#">Read More</a>
+      </article>
+
+      <article class="article" data-category="gadgets" data-aos="fade-up" data-aos-delay="100">
+        <img src="https://picsum.photos/400/200?random=2" alt="Smartphones 2025" />
+        <h2>Top 5 Smartphones of 2025 Reviewed</h2>
+        <p class="date">Published: August 8, 2025</p>
+        <p>Smartphones with foldable displays and AI-powered cameras top the list for innovation and design.</p>
+        <a href="#">Read More</a>
+      </article>
+
+      <article class="article" data-category="software" data-aos="fade-up" data-aos-delay="200">
+        <img src="https://picsum.photos/400/200?random=3" alt="JavaScript Tips" />
+        <h2>10 JavaScript Tips to Write Cleaner Code</h2>
+        <p class="date">Published: August 5, 2025</p>
+        <p>Improve your JavaScript skills with these practical tips for better, cleaner code.</p>
+        <a href="#">Read More</a>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 TechNews. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <!-- AOS Animation JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      easing: 'ease-in-out',
+      once: true,
+    });
+  </script>
+</body>
+</html>
